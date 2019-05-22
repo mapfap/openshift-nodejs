@@ -1,3 +1,9 @@
+## Prerequisite
+
+1. Having an Openshift cluster ready.
+2. Create a new namespace.
+3. Install oc cli on your machine
+
 ## Setup
 
 1. On the [openshift/deployment-config.yaml](https://github.com/mapfap/openshift-nodejs/blob/master/openshift/deployment-config.yaml), change value of spec.template.spec.containers[0].image to be

@@ -22,15 +22,15 @@ $ oc apply -f openshift/route.yaml
 
 3. Start new build
 ```bash
-oc start-build openshift-nodejs
+$ oc start-build openshift-nodejs
 ```
 
 4. Start rollout new deployment
 ```bash
-oc rollout latest openshift-nodejs
+$ oc rollout latest openshift-nodejs
 ```
 
 5. Display the URL of the service
 ```bash
-oc get routes openshift-nodejs
+$ oc get routes openshift-nodejs
 ```

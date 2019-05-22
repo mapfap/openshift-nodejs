@@ -1,0 +1,15 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  labels:
+    app: openshift-nodejs
+  name: openshift-nodejs
+spec:
+  port:
+    targetPort: 8080-tcp
+  subdomain: ""
+  to:
+    kind: Service
+    name: openshift-nodejs
+    weight: 100
+  wildcardPolicy: None

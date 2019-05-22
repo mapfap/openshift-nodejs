@@ -1,9 +1,9 @@
 ## Setup
 
-1. Modify openshift/deployment-config.yaml
-Change the value of spec.template.spec.containers[0].image to be
+1. On the [openshift/deployment-config.yaml](https://github.com/mapfap/openshift-nodejs/blob/master/openshift/deployment-config.yaml), change value of spec.template.spec.containers[0].image to be
+```
 image-registry.openshift-image-registry.svc:5000/<<YOUR_NAMESPACE_HERE>>/openshift-nodejs
-
+````
 
 2. Apply Openshift resources with following commands in order.
 ```bash
